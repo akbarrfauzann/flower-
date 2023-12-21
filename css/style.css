@@ -13,11 +13,21 @@ body {
   background-color: black;
 }
 .greetings {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.greetings-text {
   font-size: 6rem;
   font-weight: 900;
 }
+
 .greetings > span {
   animation: glow 3s ease-in-out infinite;
+}
+
+.greetings-text > span {
+  animation: glow-text 3s ease-in-out infinite;
 }
 @keyframes glow {
   0%,
@@ -31,47 +41,74 @@ body {
     text-shadow: none;
   }
 }
-.greetings > span:nth-child(2) {
+
+@keyframes glow-text {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 12px #e7002e, 0 0 50px #e7002e, 0 0 100px #e7002e;
+  }
+  10%,
+  90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+.greetings,
+.greetings-text > span:nth-child(2) {
   animation-delay: 0.2s;
 }
-.greetings > span:nth-child(3) {
+.greetings,
+.greetings-text > span:nth-child(3) {
   animation-delay: 0.4s;
 }
-.greetings > span:nth-child(4) {
+.greetings,
+.greetings-text > span:nth-child(4) {
   animation-delay: 0.6s;
 }
-.greetings > span:nth-child(5) {
+.greetings,
+.greetings-text > span:nth-child(5) {
   animation-delay: 0.8s;
 }
-.greetings > span:nth-child(6) {
+.greetings,
+.greetings-text > span:nth-child(6) {
   animation-delay: 1s;
 }
-.greetings > span:nth-child(7) {
+.greetings,
+.greetings-text > span:nth-child(7) {
   animation-delay: 1.2s;
 }
-.greetings > span:nth-child(8) {
+.greetings,
+.greetings-text > span:nth-child(8) {
   animation-delay: 1.4s;
 }
-.greetings > span:nth-child(9) {
+.greetings,
+.greetings-text > span:nth-child(9) {
   animation-delay: 1.6s;
 }
-.greetings > span:nth-child(10) {
+.greetings,
+.greetings-text > span:nth-child(10) {
   animation-delay: 1.8s;
 }
-.greetings > span:nth-child(11) {
+.greetings,
+.greetings-text > span:nth-child(11) {
   animation-delay: 2s;
 }
-.greetings > span:nth-child(12) {
+.greetings,
+.greetings-text > span:nth-child(12) {
   animation-delay: 2.2s;
 }
 
-.greetings > span:nth-child(13) {
+.greetings,
+.greetings-text > span:nth-child(13) {
   animation-delay: 2.4s;
 }
-.greetings > span:nth-child(14) {
+.greetings,
+.greetings-text > span:nth-child(14) {
   animation-delay: 2.6s;
 }
-.greetings > span:nth-child(15) {
+.greetings,
+.greetings-text > span:nth-child(15) {
   animation-delay: 2.8s;
 }
 .description {
